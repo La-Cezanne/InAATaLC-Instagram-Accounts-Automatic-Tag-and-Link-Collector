@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram-Accounts Automatic Tag and Link Collector (InAATaLC)",
+    "version": "1.0",
+    "description": "Collects and stores Instagram profiles (name and link) collected from other websites where linked. (On the For-Future website)",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://www.for-future-buendnis.de/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.for-future-buendnis.de/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

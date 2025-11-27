@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>InAATaLC — Collected Instagram Links</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 420px; padding: 12px; }
+    h1 { font-size: 16px; margin: 0 0 8px 0; }
+    #controls { margin-bottom: 8px; display:flex; gap:8px; flex-wrap:wrap; }
+    button { padding:6px 10px; font-size:13px; }
+    #list { max-height: 360px; overflow:auto; border:1px solid #ddd; padding:8px; border-radius:6px; background:#fafafa; }
+    .item { padding:6px 4px; border-bottom:1px solid #eee; }
+    .item:last-child { border-bottom:none; }
+    .meta { font-size:12px; color:#444; }
+    .url { font-size:12px; color:#0066cc; word-break:break-all; }
+  </style>
+</head>
+<body>
+  <h1>Collected Instagram Links</h1>
+  <div id="controls">
+    <button id="refresh">Refresh</button>
+    <button id="export-json">Export JSON</button>
+    <button id="export-csv">Export CSV</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div id="list">Loading…</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
