@@ -1,6 +1,7 @@
 # InAATaLC-Instagram-Accounts-Automatic-Tag-and-Link-Collector
 Chrome Browser extension to collect and store Instagram profiles (name and link) collected from other websites where linked (created with the help of ChatGPT).
 According to the manifest it currently only works for the website: https://www.for-future-buendnis.de/
+
 You can simply edit the manifest to include other websites per hand. From testing it doesn´t work consistently without reloading the page or waiting a while.
 
 ## Installation
